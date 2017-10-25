@@ -4,7 +4,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: #dddddd;
+	background-image: url("../images/halftone.png");
 }
 
 a.menu,
@@ -26,18 +26,27 @@ h1,
 h2,
 h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
 }
 
 h1 {
 	color: #ffffff;
+	font-size: 32px;
 }
 
 h2 {
 	color: #4aaaa5;
+	font-size: 24px;
+
 }
 
 h3 {
 	color: #4aaaa5;
+	font-size: 18px;
+}
+
+h3.pf {
+	color: #ffffff;
 }
 
 img.articleimg {
@@ -68,14 +77,38 @@ img.thinline {
 	height: 1px;
 }
 
+img.portfolio {
+	width: 275px;
+}
+
+input {
+	font-size: 18px;
+	padding: 5px;
+}
+
+input,
+textarea {
+	margin-bottom: 10px;
+}
+
+input.submission {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-weight: bold;
+	border: 0;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 .article {
 	background-color: #ffffff;
 	border: 5px;
 	border-color: #dddddd;
 	width: 600px;
 	float: left;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding: 25px;
 
 }
 
@@ -90,11 +123,32 @@ img.thinline {
 	clear: both;
 }
 
+.pfL {
+	float: left;
+	margin-bottom: 35px;
+	position: relative;
+}
+
+.pfR {
+	float: right;
+	margin-bottom: 35px;
+	position: relative;
+}
+
+.pfTitle {
+	position: absolute;
+	bottom: 15px;
+	background-color: #4aaaa5;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+
 #header {
 	width: 100%;
 	background-color: #ffffff;
-	border-bottom: : 5px;
-	border-bottom-color: #cccccc;
+	border-bottom: 1px solid #cccccc;
 }
 
 #headerName {
@@ -102,11 +156,13 @@ img.thinline {
 	float: left;
 	padding-left: 25px;
 	padding-right: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 #headerMenu {
 	float: right;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 #headerMenu li {
@@ -125,17 +181,18 @@ img.thinline {
 #footer {
 	width: 100%;
 	background-color: #666666;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	margin: 0 auto;
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	border-top: 5px solid #4aaaa5; 
 }
 
 #connect {
 	width: 220px;
 	background-color: #ffffff;
 	float: right;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-bottom: 25px;
+	padding: 25px;
 }
